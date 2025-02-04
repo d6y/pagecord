@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/rails/propshaft.git
+  revision: 6a84a8c3dca66f8c9a977e2c685f65ed920f2a99
+  specs:
+    propshaft (1.1.0)
+      actionpack (>= 7.0.0)
+      activesupport (>= 7.0.0)
+      rack
+      railties (>= 7.0.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 4d42d34adda4011e770c18136966cb5df08c9220
   branch: main
@@ -380,13 +390,6 @@ GEM
       logger
       rack (>= 2.2.4)
       redis-client (>= 0.22.2)
-    sprockets (4.2.1)
-      concurrent-ruby (~> 1.0)
-      rack (>= 2.2.4, < 4)
-    sprockets-rails (3.5.2)
-      actionpack (>= 6.1)
-      activesupport (>= 6.1)
-      sprockets (>= 3.0.0)
     sqlite3 (2.5.0-aarch64-linux-gnu)
     sqlite3 (2.5.0-arm-linux-gnu)
     sqlite3 (2.5.0-arm64-darwin)
@@ -470,6 +473,7 @@ DEPENDENCIES
   pg
   postmark-rails
   premailer-rails (~> 1.12)
+  propshaft!
   puma (>= 5.0)
   rails!
   rails-controller-testing
@@ -480,7 +484,6 @@ DEPENDENCIES
   sentry-rails
   sentry-ruby
   sidekiq
-  sprockets-rails
   sqlite3 (~> 2.2)
   stimulus-rails
   tailwindcss-rails

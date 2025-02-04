@@ -1,36 +1,3 @@
-/* Trix styles */
-
-trix-toolbar {
-  margin-top: 2em;
-  position: sticky;
-}
-
-trix-toolbar .trix-button.trix-button--icon {
-  border: 0;
-}
-
-trix-toolbar .trix-button-group {
-  border: 0;
-}
-
-trix-toolbar .trix-button-group:not(:first-child) {
-  margin-left: 0;
-}
-
-.trix-button-row {
-  margin-left: -0.5em;
-}
-
-.trix-content .attachment--preview img {
-  display: inline;
-}
-
-.trix-content h1 strong {
-  font-weight: bold;
-}
-
-/* Tailwind */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -148,5 +115,3 @@ a:not([href]), a:not([href]):hover { /* disabled links */
   }
 }
 
-
-@import 'actiontext.css';

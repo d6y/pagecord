@@ -47,6 +47,8 @@ Rails.application.routes.draw do
     mount Sidekiq::Web, at: "/admin/sidekiq"
   end
 
+  get "manifest", to: "rails/pwa#manifest", as: :pwa_manifest
+
   get "/404", to: "errors#not_found"
   get "/422", to: "errors#unacceptable"
   get "/500", to: "errors#internal_error"
